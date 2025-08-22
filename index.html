@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Programming Reference</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2d6cdf;
+        }
+        pre {
+            background: #eee;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+        a {
+            color: #2d6cdf;
+            text-decoration: underline;
+        }
+        /* Responsive styles for mobile devices */
+        @media (max-width: 600px) {
+            header, main, footer {
+                max-width: 100%;
+                padding: 10px;
+            }
+            section {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            pre {
+                font-size: 13px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Beginner Programming Reference!</h1>
+        <p>This guide is for 1st year students learning C++, HTML, CSS, and JavaScript.</p>
+    </header>
+    <hr>
+    <main>
+        <!-- C++ Section -->
+        <section class="sec1">
+            <h1>C++</h1>
+            <p>
+                Learn about basic data types and arithmetic operations. More info: 
+                <a href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank">W3Schools C++</a>
+            </p>
+            <article>
+                <p><strong>Example:</strong> Declaring <code>int</code> and <code>string</code> variables in C++</p>
+                <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    int age = 18;
+    string name = "Alice";
+    cout &lt;&lt; "Name: " &lt;&lt; name &lt;&lt; endl;
+    cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; endl;
+    return 0;
+}
+
+Output:
+    Name: Alice 
+    Age: 18
+                </pre>
+                <p>
+                    <strong>Line-by-line explanation:</strong><br>
+                    <b>#include &lt;iostream&gt;</b> – Includes the library for input and output.<br>
+                    <b>#include &lt;string&gt;</b> – Includes the library for using strings.<br>
+                    <b>using namespace std;</b> – Allows using standard library names without prefix.<br>
+                    <b>int main()</b> – The main function where the program starts.<br>
+                    <b>int age = 18;</b> – Declares an integer variable named <code>age</code> and sets it to 18.<br>
+                    <b>string name = "Alice";</b> – Declares a string variable named <code>name</code> and sets it to "Alice".<br>
+                    <b>cout &lt;&lt; "Name: " &lt;&lt; name &lt;&lt; endl;</b> – Prints "Name: Alice" to the screen.<br>
+                    <b>cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; endl;</b> – Prints "Age: 18" to the screen.<br>
+                    <b>return 0;</b> – Ends the program and returns 0 to the operating system.
+                </p>
+            </article>
+        </section>
+        <!-- HTML Section -->
+        <section class="sec2">
+            <h1>HTML</h1>
+            <p>
+                Learn how to structure web pages. More info: 
+                <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a>
+            </p>
+            <article>
+                <p><strong>Example:</strong> Creating a heading and a paragraph in HTML</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Output:
+    Hello, World!
+    This is a paragraph.
+                </pre>
+                <p>
+                    <strong>Line-by-line explanation:</strong><br>
+                    <b>&lt;!DOCTYPE html&gt;</b> – Declares the document type and version (HTML5).<br>
+                    <b>&lt;html&gt;</b> – The root element of the HTML page.<br>
+                    <b>&lt;body&gt;</b> – Contains the visible content of the page.<br>
+                    <b>&lt;h1&gt;Hello, World!&lt;/h1&gt;</b> – Displays a large heading.<br>
+                    <b>&lt;p&gt;This is a paragraph.&lt;/p&gt;</b> – Displays a paragraph of text.<br>
+                    <b>&lt;/body&gt;</b> – Ends the body section.<br>
+                    <b>&lt;/html&gt;</b> – Ends the HTML document.
+                </p>
+            </article>
+        </section>
+        <!-- CSS Section -->
+        <section class="sec3">
+            <h1>CSS</h1>
+            <p>
+                Learn how to style web pages. More info: 
+                <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS</a>
+            </p>
+            <article>
+                <p><strong>Example:</strong> Styling a heading and paragraph</p>
+                <pre>
+h1 {
+    color: blue;      /* Changes the heading text color to blue */
+    font-size: 32px;  /* Sets the heading font size to 32 pixels */
+}
+p {
+    color: gray;      /* Changes the paragraph text color to gray */
+    font-size: 18px;  /* Sets the paragraph font size to 18 pixels */
+}
+                </pre>
+                <p>
+                    <strong>Line-by-line explanation:</strong><br>
+                    <b>h1 { color: blue; }</b> – Sets the color of all <code>&lt;h1&gt;</code> headings to blue.<br>
+                    <b>h1 { font-size: 32px; }</b> – Makes the <code>&lt;h1&gt;</code> text larger.<br>
+                    <b>p { color: gray; }</b> – Sets the color of all <code>&lt;p&gt;</code> paragraphs to gray.<br>
+                    <b>p { font-size: 18px; }</b> – Makes the <code>&lt;p&gt;</code> text a bit larger.<br>
+                    <br>
+                    This CSS changes the appearance of headings and paragraphs on your web page.
+                </p>
+            </article>
+        </section>
+        <!-- JavaScript Section -->
+        <section class="sec4">
+            <h1>JavaScript</h1>
+            <p>
+                Learn how to add interactivity to web pages. More info: 
+                <a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript</a>
+            </p>
+            <article>
+                <p><strong>Example:</strong> Declaring variables and showing an alert</p>
+                <pre>
+let name = "Alice";
+let age = 18;
+alert("Name: " + name + "\nAge: " + age);
+
+Output: 
+    Name: Alice 
+    Age: 18 
+                </pre>
+                <p>
+                    <strong>Line-by-line explanation:</strong><br>
+                    <b>let name = "Alice";</b> – Declares a variable called <code>name</code> and assigns it the value "Alice".<br>
+                    <b>let age = 18;</b> – Declares a variable called <code>age</code> and assigns it the value 18.<br>
+                    <b>alert("Name: " + name + "\nAge: " + age);</b> – Shows a popup alert displaying the name and age. The <code>\n</code> creates a new line in the alert box.<br>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            If you want a better Beginner Programming Reference you can chat me 
+            <a href="https://www.facebook.com/gj.jusss/">here.</a>
+        </p>
+    </footer>
+</body>
+</html>
